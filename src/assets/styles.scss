@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom color palette
+$primary-color: #1D4ED8;  // Tailwind Blue-600
+$secondary-color: #9333EA;  // Tailwind Purple-600
+$hover-color: #F3F4F6;  // Light gray for hover effects
+
+// Table wrapper with smooth scroll
+.table-wrapper {
+  @apply overflow-x-auto rounded-xl shadow-lg ring-1 ring-gray-200;
+  background-color: #ffffff;
+}
+
+// Table Header styling
+.table-header {
+  @apply bg-blue-600 text-white uppercase text-xs font-semibold;
+  border-bottom: 2px solid #ddd;
+}
+
+// Table row styling
+.table-row {
+  @apply transition ease-in-out duration-300;
+
+  &:hover {
+    background-color: $hover-color;  // Light gray hover effect
+    cursor: pointer;
+  }
+}
+
+// Table Cell Styling (Padding and alignment)
+.table-cell {
+  @apply px-6 py-4 text-sm text-gray-700;
+  border-bottom: 1px solid #ddd;
+}
+
+// Search Input field styling
+.search-input {
+  @apply border border-gray-300 px-4 py-2 rounded-xl shadow-sm w-full md:w-1/3 focus:outline-none focus:ring-2 focus:ring-blue-300;
+  font-size: 1rem;
+  color: #333;
+}
+
+// Sort Select and Button Styles
+.sort-select {
+  @apply border border-gray-300 rounded-xl px-3 py-2 bg-white shadow-sm;
+}
+
+.sort-button {
+  @apply ml-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-xl shadow-md transition;
+}
+
+// Pagination button custom styling
+.pagination-button {
+  @apply px-5 py-2 bg-gray-200 hover:bg-gray-300 text-sm rounded-xl disabled:opacity-50 transition;
+  color: #333;
+}
+
+// Page control styling for buttons in Pagination
+.page-control-btn {
+  @apply px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-md transition;
+  font-weight: bold;
+}
