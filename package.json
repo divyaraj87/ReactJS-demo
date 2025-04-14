@@ -2,7 +2,7 @@
   "name": "my-react-table-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://divyaraj87.github.io/divyaraj87/ReactJS-demo",
+  "homepage": "https://divyaraj87.github.io/ReactJS-demo",
   "dependencies": {
     "autoprefixer": "^10.4.12",
     "axios": "^1.3.0",
